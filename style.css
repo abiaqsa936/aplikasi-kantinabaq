@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Panel Kiri */
+.main-panel {
+    flex: 2;
+    padding: 30px;
+    border-right: 1px solid #eee;
+    overflow-y: auto;
+}
+
+/* Panel Kanan */
+.side-panel {
+    flex: 1;
+    background: #fafafa;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 50px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.action-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-bayar { flex: 2; padding: 15px; background: #27ae60; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; }
+.btn-reset { flex: 1; padding: 15px; background: #e74c3c; color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; }
+
+/* Styling Riwayat */
+.history-box {
+    margin-top: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#list-riwayat { list-style: none; padding: 0; font-size: 14px; }
+#list-riwayat li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+.total-pemasukan { margin-top: 15px; padding-top: 10px; border-top: 2px solid #333; font-weight: bold; }
