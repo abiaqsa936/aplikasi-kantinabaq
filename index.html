@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Digital Abaq</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="main-panel">
+            <header>
+                <h1>🍱 Kantin Digital Abaq</h1>
+                <p>Pilih menu dan masukkan jumlah barang</p>
+            </header>
+
+            <div id="tempat-menu" class="grid-menu">
+                </div>
+
+            <div class="action-buttons">
+                <button onclick="hitungTotal()" class="btn-bayar">Proses Bayar</button>
+                <button onclick="ulangIsi()" class="btn-reset">Refresh / Ulang</button>
+            </div>
+        </div>
+
+        <div class="side-panel">
+            <div class="summary-box">
+                <h3>Total Bayar</h3>
+                <h2 id="display-harga">Rp 0</h2>
+                <p id="pesan-diskon"></p>
+            </div>
+
+            <div class="history-box">
+                <h3>📈 Riwayat Pemasukan</h3>
+                <ul id="list-riwayat">
+                    </ul>
+                <div class="total-pemasukan">
+                    Total Pendapatan: <span id="total-pendapatan">Rp 0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Aplikasi_kantin.js"></script>
+</body>
+</html>
